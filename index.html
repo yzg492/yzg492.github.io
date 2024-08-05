@@ -1,1 +1,48 @@
 <h1>易怡荨<h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<style>
+    body{
+        margin: 0;    /* 外边距清除 */
+    }
+    .heart{
+        position:relative;
+        width: 100px;/* 宽度：200像素 */
+        height: 100px;/* 同理高度 */
+        margin: 50px auto;/* 对应 上下  左右  auto自动居中 */
+        background-color: #969696;/* 父盒子背景 */
+    }
+    .right{
+  		top: 0px;
+        left: 0px;
+        position:absolute;
+        width: 50px;
+        height: 75px;
+        background-color: red;
+        border-radius: 25px 25px 0 0;/* css3圆角属性 */
+        transform: rotate(-45deg);/* css3变换属性  旋转（角度） */
+    }
+    .left{
+    	top: 0px;
+        left: 0px;
+        position:absolute;
+        width: 50px;
+        height: 75px;
+        background-color: red;
+        border-radius: 25px 25px 0 0;/* css3圆角属性 从左上顺时针对应*/
+        transform: translateX(18px) rotate(45deg);
+    }
+</style>
+<body>
+    <div class="heart"> <!-- class自定义类名  盒子标签 -->
+        <div class="right"></div><!-- 盒子右转 -->
+        <div class="left"></div><!-- 盒子左转 -->
+    </div>
+</body>
+
+</html>
